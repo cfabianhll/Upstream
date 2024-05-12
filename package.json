@@ -1,0 +1,14 @@
+{
+  "name": "origin",
+  "version": "1.0.0",
+  "description": "1. Explicamos que es un Fork\r 2. Explicacmos que es un Upstream",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
