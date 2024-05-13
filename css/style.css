@@ -6,5 +6,18 @@ html{
 *::before {
  box-sizing: inherit;
 }
-
 /* Universal Box Sizing with Inheritance */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    text-align: center;
+}
+.menu {
+    background-color: #AAAAA1;
+}
+.menu a {
+    text-decoration: none;
+}
+
+
