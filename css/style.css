@@ -14,10 +14,21 @@ body {
     text-align: center;
 }
 .menu {
-    background-color: #AAAAA1;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    max-width: 120rem;
+    margin: 0 auto;
 }
 .menu a {
     text-decoration: none;
+    padding: 5px 25px;
+    color: #ffffff;
+    margin: 5px;
+}
+.principal {
+    max-width: 120rem;
+    margin: 0 auto;
 }
 
 
