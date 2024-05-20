@@ -18,13 +18,16 @@ body {
     display: flex;
     justify-content: center;
     max-width: 120rem;
-    margin: 0 auto;
+    margin: 0;
 }
 .menu a {
     text-decoration: none;
-    padding: 5px 25px;
+    padding: 10px 25px;
     color: #ffffff;
-    margin: 5px;
+}
+a:hover {
+    color: #000000;
+    background-color: antiquewhite;
 }
 .principal {
     max-width: 120rem;
