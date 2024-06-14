@@ -1,37 +1,72 @@
-html{
- box-sizing: border-box;
+/* Definición de variables CSS para colores */
+:root {
+    --menu-bg-color: #000000; /* Color de fondo del menú */
+    --menu-text-color: #ffffff; /* Color del texto del menú */
+    --hover-bg-color: antiquewhite; /* Color de fondo al pasar el ratón por encima de un enlace */
+    --hover-text-color: #000000; /* Color del texto al pasar el ratón por encima de un enlace */
 }
+
+/* Aplicación del box-sizing universal */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 62.5% de 16px es 10px, lo que hace que 1rem = 10px */
+}
+
 *,
 *::after,
 *::before {
- box-sizing: inherit;
+    box-sizing: inherit; /* Hereda el box-sizing del elemento padre */
 }
+
+* {
+    padding: 0; /* Elimina padding por defecto de todos los elementos */
+    border: 0; /* Elimina bordes por defecto de todos los elementos */
+}
+
 /* Universal Box Sizing with Inheritance */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* Fuente por defecto para el documento */
+    margin: 0; /* Elimina margen por defecto del body */
+    padding: 0; /* Elimina padding por defecto del body */
+    font-size: 1.6rem; /* Ajusta el tamaño de la fuente base a 16px */
 }
+
 .header {
-    text-align: center;
+    text-align: center; /* Centra el texto del header */
 }
+
 .menu {
-    background-color: #000000;
-    display: flex;
-    justify-content: center;
-    max-width: 120rem;
-    margin: 0;
+    display: flex; /* Usa flexbox para el diseño del menú */
+    justify-content: center; /* Centra los elementos del menú horizontalmente */
+    max-width: 120rem; /* Ancho máximo del menú */
+    margin: 0 auto; /* Centra horizontalmente el menú */
 }
-.menu a {
-    text-decoration: none;
-    padding: 10px 25px;
-    color: #ffffff;
+
+nav {
+    background-color: var(--menu-bg-color); /* Fondo negro para todo el nav */
 }
-a:hover {
-    color: #000000;
-    background-color: antiquewhite;
+
+nav a {
+    text-decoration: none; /* Elimina subrayado de los enlaces */
+    padding: 1rem 2.5rem; /* Añade padding a los enlaces del menú (10px 25px) */
+    color: var(--menu-text-color); /* Usa el color de texto definido en la variable */
 }
+
+nav a:hover {
+    color: var(--hover-text-color); /* Cambia el color del texto al pasar el ratón */
+    background-color: var(--hover-bg-color); /* Cambia el color de fondo al pasar el ratón */
+}
+
 .principal {
-    max-width: 120rem;
-    margin: 0 auto;
+    max-width: 120rem; /* Ancho máximo del contenedor principal */
+    margin: 0 auto; /* Centra el contenedor principal horizontalmente */
 }
 
-
+.footer {
+    background-color: var(--menu-bg-color); /* Usa el color de fondo definido en la variable */
+    color: var(--menu-text-color); /* Usa el color de texto definido en la variable */
+    text-align: center; /* Centra el texto del footer */
+    padding: 2rem 0; /* Padding vertical de 20px */
+    margin: 0 auto; /* Centra el footer horizontalmente */
+    max-width: 120rem; /* Ancho máximo del footer */
+}
